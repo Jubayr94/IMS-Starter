@@ -16,6 +16,9 @@ public class IMS {
 	public static final Logger LOGGER = LogManager.getLogger();
 
 	private final CustomerController customers;
+	private final ItemController items;
+	private final OrderController orders;
+	private final OrderItemController ordersItems;
 	private final Utils utils;
 
 	public IMS() {
