@@ -67,7 +67,7 @@ public class ItemDAO implements Dao<Item> {
 	 * @param item - takes in a item object. item_id will be ignored
 	 */
 	@Override
-	public Item create(Item item) {
+	public Item create(Item item) { 
 		try (Connection connection = DBUtils.getInstance().getConnection();
 				PreparedStatement statement = connection
 						.prepareStatement("INSERT INTO items(item_name, price) VALUES (?, ?)");) {
